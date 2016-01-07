@@ -1,11 +1,18 @@
 
 
-select * from city;
+select * from member;
 
 select * from country;
 
 select count(*) from city;
 select count(*) from country;
+
+
+INSERT INTO `City` VALUES (1,'Kabul','AFG','Kabol',1780000);
+INSERT INTO `City` VALUES (2,'Qandahar','AFG','Qandahar',237500);
+INSERT INTO `City` VALUES (3,'Herat','AFG','Herat',186800);
+INSERT INTO `City` VALUES (4,'Mazar-e-Sharif','AFG','Balkh',127800);
+INSERT INTO `City` VALUES (5,'Amsterdam','NLD','Noord-Holland',731200);
 
 --
 -- Member Table
@@ -18,17 +25,19 @@ create table member (
 	name			varchar(255) not null,
 	password 		varchar(255) not null,
 	register_date	date,
+	address			varchar(255) not null,
+	phone			varchar(255) not null,
 	constraint pk_member_id primary key (id)
-);
+)
 
 -- 
 -- Member CRUD (Create, Read, Update, Delete)
 -- DML(Data Manipulation Language)
 -- Create
 insert into member
-(email, name, password, register_date)
+(email, name, password, register_date,address,phone)
 values
-('xxx@hybrid.com', '홍길동', '1234', '2015/12/21')
+('xxx@hybrid.com', '홍길동', '1234', '2015/12/21','서울','000-0100-0000')
 
 -- Read
 select * from member;
@@ -53,8 +62,17 @@ select id,
 	   countrycode,
 	   district,
 	   population
-  from city
+  from city;
 
+CREATE TABLE `City` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` char(35) NOT NULL DEFAULT '',
+  `CountryCode` char(3) NOT NULL DEFAULT '',
+  `District` char(20) NOT NULL DEFAULT '',
+  `Population` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=utf8;
+  
 -- selectByCountryCode(String countryCode)  
 select id,
 	   name,

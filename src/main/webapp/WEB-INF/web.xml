@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
-  <display-name>Employee</display-name>
+  <display-name>Employee2</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -9,19 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
-  <!-- LoginFilter -->
   <filter>
-  	<filter-name>loginFilter</filter-name>
-  	<filter-class>com.hybrid.filter.LoginFilter</filter-class>    
+    <filter-name>loginFilter</filter-name>
+    <filter-class>com.hybrid.filter.LoginFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>loginFilter</filter-name>
-<!--     <url-pattern>/city/*</url-pattern>   -->
     <url-pattern>/xxx/*</url-pattern>
   </filter-mapping>
-  
-  <!-- SiteMeshFilter -->
   <filter>
     <filter-name>sitemesh</filter-name>
     <filter-class>org.sitemesh.config.ConfigurableSiteMeshFilter</filter-class>
@@ -57,10 +52,10 @@
     </init-param>
     <load-on-startup>1</load-on-startup>
     <multipart-config>
-        	<location>D:\temp</location>
-            <max-file-size>52428800</max-file-size>
-            <max-request-size>52428800</max-request-size>
-            <file-size-threshold>0</file-size-threshold>
+      <location>D:\temp</location>
+      <max-file-size>52428800</max-file-size>
+      <max-request-size>52428800</max-request-size>
+      <file-size-threshold>0</file-size-threshold>
     </multipart-config>
   </servlet>
   <servlet-mapping>

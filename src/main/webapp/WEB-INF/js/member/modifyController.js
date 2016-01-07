@@ -18,24 +18,25 @@ app.controller('modifyController', function($scope, $http, URL, $routeParams, $l
 	console.log("URL.GET_ITEM_BASE = " + URL.GET_ITEM_BASE);
 	console.log("id = " + $routeParams.id);
 
-	$scope.$parent.title = "MODIFY City View";
+	$scope.$parent.title = "MODIFY Member View";
 	
-	var ajax = $http.get(URL.GET_ITEM_BASE + $routeParams.id); // /city/2000
+	var ajax = $http.get(URL.GET_ITEM_BASE + $routeParams.id); // /member/2000
 	ajax.then(function(value) {
 		console.dir(value);
-		$scope.city = value.data;
+		$scope.member = value.data;
 	}, function(reason) {
 		console.dir(reason);
 		alert("error...");
 	});
 	
-	$scope.submit = function() {
-		var ajax = $http.put(URL.PUT_ITEM_MODIFY_BASE + $scope.city.id, {
-			id 			: $scope.city.id,
-			name 		: $scope.city.name,
-			countryCode : $scope.city.countryCode,
-			district 	: $scope.city.district,
-			population 	: $scope.city.population
+	$scope.submit = function() {		
+		var ajax = $http.put(URL.PUT_ITEM_MODIFY_BASE + $scope.member.id, {
+			id 			: $scope.member.id,
+			email 		: $scope.member.email,
+			name 		: $scope.member.name,
+			password 	: $scope.member.password,
+			address 	: $scope.member.address,
+			phone	 	: $scope.member.phone
 		});
 		
 		ajax.then(function(response) {

@@ -13,16 +13,18 @@ import com.hybrid.exception.PasswordNotMatchingException;
  *       3. 기능(method)
  */
 public class Member {
-	private long id;
+	private int id;
 	private String email;
 	private String name;
 	private String password;
-	private Date registerDate;
-	
-	public long getId() {
+	private Date register_Date;
+	private String address;
+	private String phone;
+
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getEmail() {
@@ -43,12 +45,31 @@ public class Member {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Date getRegisterDate() {
-		return registerDate;
+	
+	public Date getRegister_Date() {
+		return register_Date;
 	}
-	public void setRegisterDate(Date registerDate) {
-		this.registerDate = registerDate;
+	public void setRegister_Date(Date register_Date) {
+		this.register_Date = register_Date;
 	}
+	
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
 	
 	public void changePassword(String oldPassword, String newPassword) {
 		if (!this.password.equals(oldPassword)) {
@@ -56,6 +77,8 @@ public class Member {
 		}
 		this.password = newPassword;
 	}
+	
+	
 	
 	
 }
