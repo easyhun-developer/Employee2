@@ -38,7 +38,6 @@
 				<th>email</th>
 				<th>name</th>
 				<th>password</th>
-				<th>register_Date</th>
 				<th>address</th>
 				<th>phone</th>				
 				<th>수정</th>
@@ -52,7 +51,6 @@
 				<td>{{member.email}}</td>
 				<td>{{member.name}}</td>
 				<td>{{member.password}}</td>
-				<td>{{member.register_Date}}</td>
 				<td>{{member.address}}</td>
 				<td>{{member.phone}}</td>
 			
@@ -63,12 +61,11 @@
 		
 		 <div class="col" data-ng-repeat="member in members">            
             <div class="col-lg-4 col-sm-6 text-center">
-                <a href="http://localhost:8080/Employee2/Korean_Food/FrontGate.jsp"><img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt=""></a>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
                 <h4>id: <small>{{member.id}}</small></h4>
                 <h4>email: <small>{{member.email}}</small></h4>
                 <h4>name: <small>{{member.name}}</small></h4>
                 <h4>password: <small>{{member.password}}</small></h4>
-                <h4>register_Date: <small>{{member.register_Date}}</small></h4>
                 <h4>address: <small>{{member.address}}</small></h4>
                 <h4>phone: <small>{{member.phone}}</small></h4>                
             </div>

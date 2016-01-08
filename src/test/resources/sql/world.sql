@@ -4,6 +4,8 @@ select * from member;
 
 select * from country;
 
+select * from store;
+
 select count(*) from city;
 select count(*) from country;
 
@@ -17,7 +19,7 @@ INSERT INTO `City` VALUES (5,'Amsterdam','NLD','Noord-Holland',731200);
 --
 -- Member Table
 -- DDL(Data Definition Language)
-drop table member;
+drop table store;
 
 create table member (
 	id				int auto_increment,
@@ -30,14 +32,35 @@ create table member (
 	constraint pk_member_id primary key (id)
 )
 
+create table store (
+	id				int auto_increment,
+	name			varchar(255) not null,
+	restype			varchar(255) not null,
+	district		varchar(255) not null,
+	hitcount		varchar(255) not null,
+	email			varchar(255) not null,
+	password 		varchar(255) not null,
+	register_date	date,
+	lat				varchar(255) not null,
+	lng				varchar(255) not null,
+	constraint pk_store_id primary key (id)
+)
+
+
 -- 
 -- Member CRUD (Create, Read, Update, Delete)
 -- DML(Data Manipulation Language)
 -- Create
+insert into store
+(name,restype,district,hitcount,email,password,register_date,lat,lng)
+values
+('야시로','hope','kore','3count','xxx@hybrid.com',  '1344567', '2015/12/21','45.6','45.1')
+
 insert into member
 (email, name, password, register_date,address,phone)
 values
 ('xxx@hybrid.com', '홍길동', '1234', '2015/12/21','서울','000-0100-0000')
+
 
 -- Read
 select * from member;

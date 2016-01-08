@@ -283,6 +283,15 @@
                             <li>
                                 <a href="<c:url value="/country/main.html"/>">Country</a>
                             </li>
+                            
+                            <li>
+                                <a href="<c:url value="/member/main.html"/>">Member</a>
+                            </li>
+                            
+                            <li>
+                                <a href="<c:url value="/store/main.html"/>">Store</a>
+                            </li>
+                                                        
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>

@@ -81,4 +81,15 @@
 	<property name="cityMapper" ref="cityMapper"/>
 </bean>
 
+<!-- StoreMapper -->
+<bean id="storeMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+	<property name="mapperInterface" value="com.hybrid.mapper.StoreMapper"/>
+	<property name="sqlSessionTemplate" ref="sqlSession"/>
+</bean>
+
+<!-- StoreDao -->
+<bean id="storeDao" class="com.hybrid.dao.StoreDao">
+	<property name="storeMapper" ref="storeMapper"/>
+</bean>
+
 </beans>

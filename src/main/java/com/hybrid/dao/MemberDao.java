@@ -41,6 +41,7 @@ public class MemberDao {
 		return memberMapper.selectByEmailAndPassword(emailAndPassword);
 	}
 	
+	
 	public int insert(Member member) {
 		int rtn = memberMapper.insert(member);
 		

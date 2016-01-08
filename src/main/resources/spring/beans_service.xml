@@ -71,4 +71,42 @@
     <property name="memberDao" ref="memberDao"/>
 </bean>
 
+
+
+<!-- StoreListService -->
+<bean id="storeListService" class="com.hybrid.service.StoreListService">
+    <property name="storeDao" ref="storeDao"/>
+</bean>
+
+<!-- StorePageService -->
+<bean id="storePageService" class="com.hybrid.service.StorePageService">
+    <property name="storeDao" ref="storeDao"/>
+</bean>
+
+<!-- StoreRegisterService -->
+<bean id="storeRegisterService" class="com.hybrid.service.StoreRegisterService">
+    <property name="storeDao" ref="storeDao"/>
+</bean>   
+
+<!-- StoreModifyService -->
+<bean id="storeModifyService" class="com.hybrid.service.StoreModifyService">
+    <property name="storeDao" ref="storeDao"/>
+</bean>
+
+<!-- StoreDetailService -->
+<bean id="storeDetailService" class="com.hybrid.service.StoreDetailService">
+    <property name="storeDao" ref="storeDao"/>
+</bean>
+
+<!-- StoreUnRegisterService -->
+<bean id="storeUnRegisterService" class="com.hybrid.service.StoreUnRegisterService">
+    <property name="storeDao" ref="storeDao"/>
+</bean>
+
+<!-- StoreLoginService -->
+<bean id="storeloginService" class="com.hybrid.service.StoreLoginService">
+    <property name="storeDao" ref="storeDao"/>
+</bean>
+
+
 </beans>

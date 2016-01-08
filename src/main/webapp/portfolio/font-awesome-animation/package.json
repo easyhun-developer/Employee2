@@ -1,0 +1,67 @@
+{
+  "name": "font-awesome-animation",
+  "version": "0.0.7",
+  "dependencies": {},
+  "author": {
+    "name": "l-lin"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-express": "1.2.0",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-myth": "~0.2.0",
+    "load-grunt-config": "~0.7.2",
+    "jshint-stylish": "~0.1.3",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.2.0",
+    "express": "~3.0.4"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "description": "font-awesome-animation [![Build Status](https://travis-ci.org/l-lin/font-awesome-animation.png?branch=master)](https://travis-ci.org/l-lin/font-awesome-animation) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) ==========",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l-lin/font-awesome-animation.git"
+  },
+  "keywords": [
+    "font",
+    "awesome",
+    "fontawesome",
+    "animation"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l-lin/font-awesome-animation/issues"
+  },
+  "homepage": "https://github.com/l-lin/font-awesome-animation#readme",
+  "gitHead": "486f1cf5f2e0a305bcdada36d63049df46792a1e",
+  "_id": "font-awesome-animation@0.0.7",
+  "_shasum": "443b2abd7d1f95b3c99b49b1a1e429c26ad170e1",
+  "_from": "font-awesome-animation@*",
+  "_npmVersion": "3.3.9",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "name": "skecskes",
+    "email": "mr.kecskes@gmail.com"
+  },
+  "dist": {
+    "shasum": "443b2abd7d1f95b3c99b49b1a1e429c26ad170e1",
+    "tarball": "http://registry.npmjs.org/font-awesome-animation/-/font-awesome-animation-0.0.7.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "skecskes",
+      "email": "mr.kecskes@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/font-awesome-animation/-/font-awesome-animation-0.0.7.tgz"
+}
